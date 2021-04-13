@@ -41,6 +41,12 @@ Production environment:
 yarn start
 ```
 
+Test environment:
+
+```bash
+yarn test
+```
+
 ## Update dependencies
 
 If you want to select dependencies interactively from the terminal, use the following command:
