@@ -1,0 +1,47 @@
+version: "3.8"
+
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    ports:
+      - "3306:3306"
+    networks:
+      - maria-net
+    volumes:
+      - maria-vol:/data
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: always
+    networks:
+      - maria-net
+    ports:
+      - "80:80"
+    environment:
+      PMA_HOST: mariadb
+    depends_on:
+      - mariadb
+
+  redis-sessions:
+    image: redis:latest
+    container_name: redis
+    restart: always
+    ports:
+      - 6379:6379
+    command: ["redis-server", "--appendonly", "yes"]
+    networks:
+      - redis-net
+    volumes:
+      - redis-vol:/data
+
+networks:
+  redis-net:
+  maria-net:
+volumes:
+  redis-vol:
+  maria-vol:
