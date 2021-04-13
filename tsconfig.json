@@ -34,9 +34,6 @@
             ],
             "@services/*": [
                 "./src/services/*"
-            ],
-            "@routes/*": [
-                "src/routes/*"
             ]
         }
     },
