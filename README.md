@@ -32,7 +32,7 @@ yarn dev
 Build the project:
 
 ```bash
-yarn dev
+yarn build
 ```
 
 Production environment:
