@@ -16,7 +16,7 @@ let app
 
 NODE_ENV !== 'TEST' ? app = fastify({ logger }) : app = fastify()
 
-app.register(cors, { origin: CORS_ORIGIN, credentials: true })
+app.register(cors, { origin: CORS_ORIGIN })
 app.register(helmet)
 app.register(rateLimit, {
   max: 100,
