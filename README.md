@@ -55,7 +55,7 @@ If you want to select dependencies interactively from the terminal, use the foll
 yarn upgrade-interactive --latest 
 ```
 
-If you do not want to select dependencies interactively from the terminal, use the following command:
+If you don't, use the following command:
 
 ```bash
 yarn upgrade --latest 
