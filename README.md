@@ -47,7 +47,7 @@ Test environment:
 yarn test
 ```
 
-## Update dependencies
+## Update packages
 
 If you want to select dependencies interactively from the terminal, use the following command:
 
@@ -58,7 +58,7 @@ yarn upgrade-interactive --latest
 If you do not want to select dependencies interactively from the terminal, use the following command:
 
 ```bash
-yarn upgrade-interactive --latest 
+yarn upgrade --latest 
 ```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
