@@ -23,8 +23,22 @@ yarn install
 
 ## How to run
 
+Development environment:
+
 ```bash
 yarn dev
+```
+
+Build the project:
+
+```bash
+yarn dev
+```
+
+Production environment:
+
+```bash
+yarn start
 ```
 
 ## Update dependencies
