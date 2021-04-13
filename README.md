@@ -17,36 +17,28 @@ npx degit https://github.com/FranciscoMendes10866/qbase [PROJECT_NAME]
 
 ## Installation
 
-NPM
-```bash
-npm install
-```
-
-Yarn
 ```bash
 yarn install
 ```
 
 ## How to run
 
-NPM
-```bash
-npm run dev
-```
-
-Yarn
 ```bash
 yarn dev
 ```
 
 ## Update dependencies
 
-Yarn
+If you want to select dependencies interactively from the terminal, use the following command:
+
 ```bash
 yarn upgrade-interactive --latest 
 ```
 
-If you want to update all of those listed in the terminal, press the **"a"** key and then press the **"enter"** key to update all dependencies.
+If you do not want to select dependencies interactively from the terminal, use the following command:
 
+```bash
+yarn upgrade-interactive --latest 
+```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
