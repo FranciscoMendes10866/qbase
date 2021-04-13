@@ -39,5 +39,14 @@ Yarn
 yarn dev
 ```
 
+## Update dependencies
+
+Yarn
+```bash
+yarn upgrade-interactive --latest 
+```
+
+If you want to update all of those listed in the terminal, press the **"a"** key and then press the **"enter"** key to update all dependencies.
+
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
