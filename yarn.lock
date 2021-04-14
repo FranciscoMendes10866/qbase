@@ -3029,6 +3029,14 @@ fastify-rate-limit@^5.5.0:
     ms "^2.1.1"
     tiny-lru "^7.0.0"
 
+fastify-redis@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/fastify-redis/-/fastify-redis-4.3.0.tgz#b02036639a8b4e22b56762852a037b0df66fbb8b"
+  integrity sha512-10KZKRGtfxQGSJYbOKC4o3lkrC94xJV6Zr+qnRPgxvigzN626nNkadQR4zLRr0/SMN2aPLDDtyBhf7zQOUDwCw==
+  dependencies:
+    fastify-plugin "^3.0.0"
+    ioredis "^4.22.0"
+
 fastify-warning@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/fastify-warning/-/fastify-warning-0.2.0.tgz#e717776026a4493dc9a2befa44db6d17f618008f"
@@ -3616,7 +3624,7 @@ into-stream@^6.0.0:
     from2 "^2.3.0"
     p-is-promise "^3.0.0"
 
-ioredis@^4.26.0:
+ioredis@^4.22.0, ioredis@^4.26.0:
   version "4.26.0"
   resolved "https://registry.yarnpkg.com/ioredis/-/ioredis-4.26.0.tgz#dbbfb5e5da085fc2b1de8174db50fa42f9fed66a"
   integrity sha512-nh39okWezWWZ35/RxXXzHksMFt4WCaev8SNO2kozRDeVdEAJj16EarqPP3JeHz8IEjEXN5CiVtbWMk62Z0eveQ==

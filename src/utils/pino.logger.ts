@@ -1,11 +1,11 @@
 import pino from 'pino'
 
 const logger = pino({
-  level: 'info',
+  level: 'trace',
   prettyPrint: {
-    levelFirst: true,
     colorize: true,
-    singleLine: true
+    singleLine: true,
+    translateTime: true
   }
 })
 
