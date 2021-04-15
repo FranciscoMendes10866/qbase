@@ -9,7 +9,7 @@ import compress from 'fastify-compress'
 import { logger } from '@utils/index'
 import { AuthGuard } from '@middlewares/index'
 import { RedisClient } from '@providers/index'
-import { UserService } from '@services/index'
+import { MetricsService, UserService } from '@services/index'
 
 const { NODE_ENV, CORS_ORIGIN, JWT_SECRET } = process.env
 
@@ -28,6 +28,7 @@ app.register(rateLimit, {
 app.register(jwt, { secret: JWT_SECRET })
 app.register(AuthGuard)
 app.register(compress)
+app.register(MetricsService)
 app.register(UserService)
 
 export default app

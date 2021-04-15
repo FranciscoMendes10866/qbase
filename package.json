@@ -42,7 +42,8 @@
     "fastify-redis": "^4.3.0",
     "ioredis": "^4.26.0",
     "pino": "^6.11.2",
-    "pino-pretty": "^4.7.1"
+    "pino-pretty": "^4.7.1",
+    "prom-client": "^13.1.0"
   },
   "scripts": {
     "dev": "ts-node-dev --cls -r tsconfig-paths/register --respawn --transpile-only --no-notify src/server.ts",
