@@ -1,7 +1,8 @@
 import { FastifyRequest, FastifyReply } from 'fastify'
+
 import { Prometheus } from '@providers/prom.provider'
 
-const MetricsService = async (app, opts) => {
+const MetricsController = async (app, opts) => {
   app.get('/metrics', async (request: FastifyRequest, reply: FastifyReply) => {
     reply.header('Content-Type', Prometheus.register.contentType)
     reply.raw.end(await Prometheus.register.metrics())
@@ -9,4 +10,4 @@ const MetricsService = async (app, opts) => {
   })
 }
 
-export default MetricsService
+export default MetricsController

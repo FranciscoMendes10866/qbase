@@ -17,7 +17,8 @@ const histogram = new Prometheus.Histogram({
  * Start the timer for the start of code execution.
  * @returns Timestamp
  */
-function metricInit () {
+function metricsInit () {
+  counter.inc()
   return new Date()
 }
 
@@ -26,15 +27,13 @@ function metricInit () {
  * @param init It is the metricInit timestamp
  * @returns The duration of the total execution time of the code already converted to seconds
  */
-function metricEnd (init: any) {
+function metricsEnd (init: any) {
   const time: any = new Date()
-  return (time - init) / 1000
+  histogram.observe((time - init) / 1000)
 }
 
 export {
   Prometheus,
-  counter,
-  histogram,
-  metricInit,
-  metricEnd
+  metricsInit,
+  metricsEnd
 }

@@ -17,7 +17,8 @@ module.exports = {
           '@functions': './src/functions',
           '@middlewares': './src/middlewares',
           '@utils': './src/utils',
-          '@services': './src/services'
+          '@services': './src/services',
+          '@controllers': './src/controllers'
         }
       }]
     ]
