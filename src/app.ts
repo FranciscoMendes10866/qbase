@@ -21,7 +21,7 @@ app.register(cors, { origin: CORS_ORIGIN })
 app.register(helmet)
 app.register(redis, { client: RedisClient, closeClient: true })
 app.register(rateLimit, {
-  max: 100,
+  max: 1000,
   timeWindow: 5 * 60 * 1000,
   redis: RedisClient
 })
