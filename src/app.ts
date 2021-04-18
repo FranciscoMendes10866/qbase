@@ -23,7 +23,8 @@ app.register(redis, { client: RedisClient, closeClient: true })
 app.register(rateLimit, {
   max: 1000,
   timeWindow: 5 * 60 * 1000,
-  redis: RedisClient
+  redis: RedisClient,
+  allowList: ['prometheus']
 })
 app.register(jwt, { secret: JWT_SECRET })
 app.register(AuthGuard)
