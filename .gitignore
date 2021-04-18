@@ -3,7 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,windows,node,java,c++,go,dotenv,vscode,visualstudiocode,sublimetext,webstorm
 
 .clinic
-
+.yarn
 ### C++ ###
 # Prerequisites
 *.d

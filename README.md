@@ -18,7 +18,7 @@ npx degit https://github.com/FranciscoMendes10866/qbase [PROJECT_NAME]
 ## Installation
 
 ```bash
-yarn install
+npm i --force
 ```
 
 ## How to run
@@ -26,39 +26,45 @@ yarn install
 Development environment:
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 Build the project:
 
 ```bash
-yarn build
+npm run build
 ```
 
 Production environment:
 
 ```bash
-yarn start
+npm start
 ```
 
 Test environment:
 
 ```bash
-yarn test
+npm test
 ```
 
 ## Update packages
 
-If you want to select dependencies interactively from the terminal, use the following command:
+Install ncu:
 
 ```bash
-yarn upgrade-interactive --latest 
+npm install -g npm-check-updates
 ```
 
-If you don't, use the following command:
+Verify dependencies:
 
 ```bash
-yarn upgrade --latest 
+ncu -u
+```
+
+Update them:
+
+```bash
+npm update
 ```
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
