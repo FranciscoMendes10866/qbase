@@ -1,5 +1,5 @@
 import 'dotenv/config'
-import boom from '@hapi/boom'
+import { boomify } from '@hapi/boom'
 
 import app from './app'
 
@@ -13,6 +13,6 @@ NODE_ENV === 'PROD' ? host = '0.0.0.0' : host = 'localhost';
   try {
     await app.listen(port, host)
   } catch (err) {
-    throw boom.boomify(err)
+    throw boomify(err)
   }
 })()

@@ -1,12 +1,10 @@
-import pino from 'pino'
-
-const logger = pino({
+const logger = {
   level: 'trace',
   prettyPrint: {
     colorize: true,
     singleLine: true,
     translateTime: true
   }
-})
+}
 
 export default logger
